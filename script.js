@@ -27,15 +27,19 @@ class Teacher extends Person {
 		console.log(`${this.name} is teaching`);
 	}
 }
-const student = new Student("Alice", 20);
-student.study(); // Output: Alice is studying
+const person = new Person("John", 25);
+console.log(person.name);  // Output: John
 
-const teacher = new Teacher("Mr. Smith", 45);
-teacher.teach(); // Output: Mr. Smith is teaching
+person.age = 30;  // Using the setter to change the age
+console.log(person.age);  // Output: 30
 
-// Updating age using setter
-student.age = 21;
-teacher.age = 46;
+// Creating a Student instance
+const student = new Student("Alice", 22);
+student.study();  // Output: Alice is studying
+
+// Creating a Teacher instance
+const teacher = new Teacher("Bob", 40);
+teacher.teach();  // Output: Bob is teaching
 
 // Do not change the code below this line
 window.Person = Person;
