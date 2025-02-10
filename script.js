@@ -51,6 +51,6 @@ const teacher = new Teacher("Bob", 40);
 teacher.teach(); // Output: Bob is teaching
 
 // Do not change the code below this line
-(window as any).Person = Person;
-(window as any).Student = Student;
-(window as any).Teacher = Teacher;
+window.Person = Person;
+window.Student = Student;
+window.Teacher = Teacher;
